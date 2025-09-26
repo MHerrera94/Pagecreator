@@ -1,0 +1,97 @@
+.construction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Cambiado para empujar el footer hacia abajo */
+  align-items: center;
+  min-height: 100vh; /* Usar min-height para asegurar que cubra la pantalla */
+  text-align: center;
+  background-color: #282c34; /* Cambiado a un gris oscuro azulado */
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Cambiado para empujar el footer hacia abajo */
+  align-items: center;
+  min-height: 100vh; /* Usar min-height para asegurar que cubra la pantalla */
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+.footer {
+  width: 100%;
+  padding: 25px 0; /* Un poco más de espacio vertical */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Más espacio entre el logo y el texto */
+  border-top: 1px solid #444; /* Borde ligeramente más claro */
+}
+
+.footer-logo {
+  height: 50px; /* Tamaño aumentado */
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 7px; /* Padding ajustado */
+  box-sizing: border-box;
+  transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.footer-logo:hover {
+  transform: scale(1.1); /* Efecto de zoom sutil al pasar el ratón */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1.2rem; /* Tamaño de fuente aumentado */
+  color: #c0c0c0; /* Color más claro para mejor visibilidad */
+  font-weight: 300; /* Un peso de fuente más ligero para elegancia */
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
